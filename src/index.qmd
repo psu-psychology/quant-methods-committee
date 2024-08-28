@@ -1,0 +1,26 @@
+---
+title: "Welcome"
+format: html
+---
+
+Welcome to the website for the Penn State [Psychology Department's](https://psych.la.psu.edu) Quantitative Methods Committee.
+
+This site serves as a means for organizing and sharing information about the department's initiatives in these methods.
+
+## 2024-25 Members
+
+- [Jonathan Cook](https://psych.la.psu.edu/?s=cook) (Social)
+- [Michele Diaz](https://psych.la.psu.edu/?s=diaz) (Cognitive)
+- [Chardée Galán](https://psych.la.psu.edu/people/chardee-galan/) (Clinical)
+- [Rick Gilmore](https://psych.la.psu.edu/?s=gilmore) (chair; Cognitive & Developmental)
+- [Frank Hillary](https://psych.la.psu.edu/?s=hillary) (Clinical)
+- [Sean Laurent](https://psych.la.psu.edu/?s=laurent) (Social)
+- [James LeBreton](https://psych.la.psu.edu/?s=lebreton) (I/O)
+
+## 2023-24 Members
+
+- Jonathan Cook
+- Rick Gilmore (chair)
+- Frank Hillary
+- Sean Laurent
+- James LeBreton

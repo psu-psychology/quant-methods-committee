@@ -1,0 +1,25 @@
+project:
+  type: book
+  render:
+    - "*.qmd"
+  output-dir: ../docs
+
+book:
+  title: "Quantitative Methods Committee"
+  author: "Rick Gilmore"
+  date: last-modified
+  chapters:
+    - href: index.qmd
+    - href: work.qmd
+    - href: courses.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: false
+    citations-hover: true
+    footnotes-hover: true
+
+editor: source
+    

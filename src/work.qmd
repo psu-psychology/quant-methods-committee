@@ -1,0 +1,19 @@
+# Work
+
+The committee has produced several work products in recent years.
+
+## 2023 recommdendations
+
+The [committee in 2023-24](index.qmd#2023-24-members) made [several recommendations](pdf/quant-methods-committee-recs-2023-11-01.pdf) to the faculty regarding how to bolster graduate teaching in quantitative methods.
+
+## 2021 recommendations
+
+The committee made a [presentation](https://psu-psychology.github.io/2021-11-18-fac-mtg-quant-meth/) to faculty in 2021 about quantitative methods and graduate teaching.
+
+## 2017 grad student survey results
+
+In 2017, the department surveyed graduate students about the quantitative and methods courses they had taken, and in what department, and what courses they hoped to take.
+
+Here is a summary of the results:
+
+<https://psu-psychology.github.io/quant-meth-course-survey-2017/>

@@ -1,0 +1,34 @@
+---
+title: "Courses and Resources"
+---
+
+## Graduate courses
+
+Core (required) statistics sequence.
+
+- PSY 507, Data Analysis I (offered Fall 2024: Laurent)
+- PSY 508, Data Analysis II (offered Spring 2024: Laurent)
+
+Required methods course for Specialization in Social, Cognitive, and Affective Neuroscience (SCAN).
+
+- PSY 511, SCAN Methods (offered Fall 2024: Hillary)
+
+Other statistics courses:
+
+- PSY 509 (LeBreton)
+
+Other methods-related courses:
+
+- PSY 525 (Gilmore)
+
+- PSY 531, Multilevel research and analysis (offered Fall 2024: LeBreton)
+
+## Dual-title programs
+
+The Psychology Department's website lists several [dual title programs](https://psych.la.psu.edu/graduate/program-areas/cross-cutting-program-initiatives/dual-degree-programs/).
+
+## Open Science/Scholarship Initiative
+
+Rick Gilmore, Frank Hillary, and several other colleagues in other departments are organizing multiple open science and open scholarship activities.
+
+- 
