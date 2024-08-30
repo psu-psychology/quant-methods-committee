@@ -5,6 +5,7 @@ The committee has produced several work products in recent years.
 ## 2023 recommdendations
 
 The [committee in 2023-24](index.qmd#2023-24-members) made [several recommendations](pdf/quant-methods-committee-recs-2023-11-01.pdf) to the faculty regarding how to bolster graduate teaching in quantitative methods.
+The recommendations were based in part on a [survey](2023-fall-grad-survey.qmd) of courses taken graduate students in recent years.
 
 ## 2021 recommendations
 

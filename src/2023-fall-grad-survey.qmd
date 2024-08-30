@@ -1,0 +1,242 @@
+---
+title: "Statistics courses taken by PSY grads"
+subtitle: 2023-10-02
+---
+
+## Background
+
+In Fall 2023, Sherri Gilliland and Irene Grassi conducted a survey of Psychology Department graduate students via Qualtrics.
+
+This document describes those data.
+
+::: {.callout-note}
+The `data/` directory is not synched to GitHub.
+:::
+
+## Setup
+
+```{r}
+library(tidyverse)
+```
+
+## Gathering
+
+The raw data were reported in a MS Excel (.xlsx format) spreadsheet.
+
+```{r}
+psych_stats <- readxl::read_xlsx("data/xlsx/STATISTICS course question.xlsx")
+```
+
+The questions asked were as follows:
+
+```{r}
+names(psych_stats)
+```
+
+## Cleaning
+
+We'll drop the personal identifiers and the last modified time.
+
+```{r}
+psych_stats <- psych_stats |>
+  dplyr::select(-c("Email", "Name", "Last modified time"))
+```
+
+Then, we clean up some of the variable names.
+
+```{r}
+psych_stats <- psych_stats |>
+  dplyr::rename(
+    "start_time" = "Start time",
+    "complete_time" = "Completion time",
+    "start_year" = "What year did you start in Psychology?",
+    "n_stats_courses" = "How many Statistics courses have you taken",
+    "course_1" = "Statistic course #1",
+    "course_2" = "Statistic course #2 (if any)",
+    "course_3" = "Statistic course #3 (if any)",
+    "course_4" = "Statistic course #4 (if any)"
+  )
+```
+
+Next, we clean-up individual variables.
+
+```{r}
+psych_stats <- psych_stats |>
+  dplyr::mutate(n_stats_courses = stringr::str_replace(n_stats_courses, "Two", "2")) |>
+  dplyr::mutate(n_stats_courses = stringr::str_replace(n_stats_courses, "1 in progress", "1")) |>
+  dplyr::mutate(
+    n_stats_courses = stringr::str_replace(
+      n_stats_courses,
+      "7 including Psych 507/508 and 2x 1-credit HDFS 597 this semester",
+      "7"
+    )
+  ) |>
+  dplyr::mutate(n_stats_courses = stringr::str_replace(n_stats_courses, "1 \\(At PSU\\)", "1")) |>
+  dplyr::mutate(
+    n_stats_courses = stringr::str_replace(n_stats_courses, "1 \\(only counting Penn State courses\\)", "1")
+  ) |>
+  dplyr::mutate(n_stats_courses = stringr::str_replace(n_stats_courses, "507 this semester", "1")) |>
+  dplyr::mutate(n_stats_courses = as.numeric(n_stats_courses))
+```
+
+```{r}
+psych_stats <- psych_stats |>
+  dplyr::mutate(
+    PSY_507 = stringr::str_detect(course_1, "507|Data Analysis [1|I]") |
+      stringr::str_detect(course_2, "508|PSY 501")
+  ) |>
+  dplyr::mutate(
+    PSY_508 = stringr::str_detect(course_1, "508") |
+      stringr::str_detect(course_2, "508|Data Analysis 2")
+  ) |>
+  dplyr::mutate(
+    PSY_531 = stringr::str_detect(course_2, "531") |
+      stringr::str_detect(course_3, "531") |
+      stringr::str_detect(course_4, "531")
+  ) |>
+  dplyr::mutate(
+    PSY_509 = stringr::str_detect(course_2, "509") |
+      stringr::str_detect(course_3, "509") |
+      stringr::str_detect(course_4, "509")
+  ) |>
+  dplyr::mutate(
+    PSY_597 = stringr::str_detect(course_2, "PSY 597") |
+      stringr::str_detect(course_4, "Psychometrics \\(LeBreton")
+  ) |>
+  dplyr::mutate(
+    hdfs = stringr::str_detect(course_1, "[hH][dD][fF][sS]") |
+      stringr::str_detect(course_2, "[hH][dD][fF][sS]") |
+      stringr::str_detect(course_3, "[hH][dD][fF][sS]") |
+      stringr::str_detect(course_4, "[hH][dD][fF][sS]")
+  ) |>
+  dplyr::mutate(
+    ed_psy = stringr::str_detect(course_1, "ED[ ]?PSY") |
+      stringr::str_detect(course_2, "ED[ ]?PSY") |
+      stringr::str_detect(course_3, "ED[ ]?PSY") |
+      stringr::str_detect(course_4, "ED[ ]?PSY")
+  ) |>
+  dplyr::mutate(
+    ist = stringr::str_detect(course_1, "IST") |
+      stringr::str_detect(course_2, "IST") |
+      stringr::str_detect(course_3, "IST") |
+      stringr::str_detect(course_4, "IST")
+  ) |>
+  dplyr::mutate(
+    stat = stringr::str_detect(course_1, "stat|STAT") |
+      stringr::str_detect(course_2, "stat|STAT") |
+      stringr::str_detect(course_3, "stat|STAT") |
+      stringr::str_detect(course_4, "stat|STAT")
+  ) |>
+  dplyr::mutate(
+    soda = stringr::str_detect(course_1, "S[oO]DA") |
+      stringr::str_detect(course_2, "S[oO]DA") |
+      stringr::str_detect(course_3, "S[oO]DA") |
+      stringr::str_detect(course_4, "S[oO]DA")
+  )
+```
+
+## Visualizations
+
+Responses by cohort year.
+
+```{r}
+#| label: fig-respondents-by-cohort-year
+#| fig-cap: "Survey respondents by starting year in the program"
+psych_stats |>
+  ggplot() +
+  aes(x = start_year) +
+  geom_bar() +
+  theme_classic()
+```
+
+```{r}
+#| label: fig-n-stats-courses-by-respondent-cohort-year
+#| fig-cap: "Number of stats courses taken by respondent cohort year"
+psych_stats |>
+  ggplot() +
+  aes(x = n_stats_courses) +
+  geom_bar() +
+  facet_grid(rows = vars(start_year)) +
+  theme_classic()
+```
+
+### PSY 507 and PSY 508
+
+```{r}
+#| label: tbl-intro-stats
+xtabs(formula = ~ PSY_507 + PSY_508, psych_stats)
+```
+
+### Other PSY
+
+```{r}
+psych_stats <- psych_stats |>
+  dplyr::mutate(PSY_beyond_508 = PSY_597 | PSY_509 | PSY_531 | PSY_597)
+
+psych_stats |>
+  dplyr::filter(start_year != 2023) |>
+  dplyr::filter(!is.na(PSY_beyond_508)) |>
+  summarise(n = sum(as.numeric(PSY_beyond_508)))
+
+psych_stats_not_2023 <- psych_stats |>
+  dplyr::filter(start_year != 2023)
+
+dim(psych_stats_not_2023)
+  
+xtabs(formula = ~ PSY_beyond_508 + start_year, psych_stats)
+```
+### HDFS or ED PSY or IST or SoDA
+
+```{r}
+psych_stats <- psych_stats |>
+  dplyr::mutate(outside_psy = ed_psy | ist | soda | stat | hdfs)
+
+psych_stats |>
+  dplyr::filter(!is.na(outside_psy)) |>
+  dplyr::filter(start_year != 2023) |>
+  summarise(n = sum(as.numeric(outside_psy)))
+
+xtabs(formula = ~ outside_psy + start_year, psych_stats)
+```
+
+### Beyond PSY 507 & 508
+
+```{r}
+psych_stats <- psych_stats |>
+  dplyr::mutate(all_beyond_508 = PSY_beyond_508 | outside_psy) 
+
+psych_stats|>
+  dplyr::filter(!is.na(all_beyond_508)) |>
+  dplyr::filter(start_year != 2023) |>
+  summarise(n = sum(as.numeric(all_beyond_508)))
+
+xtabs(formula = ~ all_beyond_508 + start_year, psych_stats)
+```
+
+
+```{r}
+xtabs(~ start_year, psych_stats)
+```
+
+So, in most cohorts, 50% or more more of the respondents are taking courses beyond the requirements.
+
+### Courses
+
+This gives an illustration of what cleaning the course data looks like.
+This is why the "quick and dirty" approach is sorta dirty.
+
+```{r}
+with(psych_stats, unique(course_1))
+```
+
+```{r}
+with(psych_stats, unique(course_2))
+```
+
+```{r}
+with(psych_stats, unique(course_3))
+```
+
+```{r}
+with(psych_stats, unique(course_4))
+```

@@ -2,6 +2,7 @@ project:
   type: book
   render:
     - "*.qmd"
+    - "reports/*.qmd"
   output-dir: ../docs
 
 book:
@@ -12,6 +13,7 @@ book:
     - href: index.qmd
     - href: work.qmd
     - href: courses.qmd
+    - href: 2023-fall-grad-survey.qmd
 
 format:
   html:
