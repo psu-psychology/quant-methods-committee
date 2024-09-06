@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -146,6 +166,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#information-gathering" id="toc-information-gathering" class="nav-link" data-scroll-target="#information-gathering">Information gathering</a></li>
   <li><a href="#enhancing-graduate-teaching" id="toc-enhancing-graduate-teaching" class="nav-link" data-scroll-target="#enhancing-graduate-teaching">Enhancing graduate teaching</a></li>
   <li><a href="#curriculum-assessment" id="toc-curriculum-assessment" class="nav-link" data-scroll-target="#curriculum-assessment">Curriculum assessment</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -176,7 +197,10 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="open-scienceopen-scholarship">Open science/open scholarship</h2>
 <ul>
 <li>Consolidating existing open science/open scholarship expertise in the department</li>
-<li>Promoting these topics more widely in our research, teaching and training, including at the undergraduate level</li>
+<li>Promoting these topics more widely in our research, teaching and training, including at the undergraduate level
+<ul>
+<li>For example, what about “teaching replication” <span class="citation" data-cites="Frank2012-fc Chopik2018-wx">(<a href="#ref-Frank2012-fc" role="doc-biblioref">Frank and Saxe 2012</a>; <a href="#ref-Chopik2018-wx" role="doc-biblioref">Chopik et al. 2018</a>)</span>.</li>
+</ul></li>
 </ul>
 </section>
 <section id="forging-partnerships" class="level2">
@@ -211,8 +235,19 @@ ul.task-list li input[type="checkbox"] {
 <li>Research notebooks, e.g., <a href="https://jupyter.org">Jupyter notebooks</a> and <a href="https://quarto.org">Quarto</a></li>
 </ul></li>
 </ul>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Chopik2018-wx" class="csl-entry" role="listitem">
+Chopik, William J, Ryan H Bremner, Andrew M Defever, and Victor N Keller. 2018. <span>“How (and Whether) to Teach Undergraduates about the Replication Crisis in Psychological Science.”</span> <em>Teaching of Psychology</em> 45 (2): 158–63. <a href="https://doi.org/10.1177/0098628318762900">https://doi.org/10.1177/0098628318762900</a>.
+</div>
+<div id="ref-Frank2012-fc" class="csl-entry" role="listitem">
+Frank, Michael C, and Rebecca Saxe. 2012. <span>“Teaching Replication.”</span> <em>Perspectives on Psychological Science: A Journal of the Association for Psychological Science</em> 7 (6): 600–604. <a href="https://doi.org/10.1177/1745691612460686">https://doi.org/10.1177/1745691612460686</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

@@ -16,6 +16,7 @@ book:
     - href: courses.qmd
     - href: 2023-fall-grad-survey.qmd
 
+
 format:
   html:
     theme: cosmo
@@ -23,6 +24,7 @@ format:
     number-sections: false
     citations-hover: true
     footnotes-hover: true
-
+    bibliography: include/bib/references.bib
+    
 editor: source
     

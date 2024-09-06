@@ -6,6 +6,7 @@ This page summarizes some of the projects the committee might choose to work on.
 
 - Consolidating existing open science/open scholarship expertise in the department
 - Promoting these topics more widely in our research, teaching and training, including at the undergraduate level
+  - For example, what about "teaching replication" [@Frank2012-fc; @Chopik2018-wx].
 
 ## Forging partnerships
 
@@ -30,3 +31,4 @@ This page summarizes some of the projects the committee might choose to work on.
   - Software development including version control
   - Research notebooks, e.g., [Jupyter notebooks](https://jupyter.org) and [Quarto](https://quarto.org)
   
+## References
