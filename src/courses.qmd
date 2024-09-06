@@ -19,7 +19,7 @@ Other statistics courses offered regularly:
 
 Other methods-related courses:
 
-- PSY 525 (Gilmore)
+- PSY 525 (Gilmore), [Transparent, Open, and Reproducible Research Practices in the Social and Behavioral Sciences](https://psu-psychology.github.io/psy-525-reproducible-research-2020/)
 
 - PSY 531, Multilevel research and analysis (offered Fall 2024: LeBreton)
 
@@ -29,5 +29,8 @@ The Psychology Department's website lists several [dual title programs](https://
 
 ## Open Science/Scholarship Initiative
 
-Rick Gilmore, Frank Hillary, and several other colleagues in other departments are organizing multiple open science and open scholarship activities.
+Rick Gilmore, Frank Hillary, and several colleagues in other departments are organizing multiple open science and open scholarship activities. Among the activities include:
 
+- "Good enough data management practices" [workshop](https://penn-state-open-science.github.io/data-mgmt-2024/) in Spring 2024.
+- [Open Science Bootcamp](https://penn-state-open-science.github.io/bootcamp-2023/) in Summer 2023.
+- [Survey](https://penn-state-open-science.github.io/survey-fall-2022/) of knowledge and interest in open science in Fall 2022 and Spring 2023.

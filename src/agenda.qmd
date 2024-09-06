@@ -15,6 +15,12 @@ This page summarizes some of the projects the committee might choose to work on.
 
 - Do we need more or better information about quantitative methods use and needs in the department?
 
+## Enhancing graduate teaching
+
+- Are the needs outlined in the [Fall 2023 memo](pdf/quant-methods-committee-recs-2023-11-01.pdf) still relevant in Fall 2024?
+- If successful, will the 2024-25 searches mitigate some of the needs?
+- What else could or should be done?
+
 ## Curriculum assessment
 
 - Work with faculty who teach *undergraduate* methods and statistics courses to support their work
