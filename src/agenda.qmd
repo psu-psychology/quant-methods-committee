@@ -1,12 +1,13 @@
 # Agenda
 
-This page summarizes some of the projects the committee might choose to work on.
+This page summarizes some of the projects the committee *might* choose to work on.
+The list is not exhaustive.
 
 ## Open science/open scholarship
 
-- Consolidating existing open science/open scholarship expertise in the department
-- Promoting these topics more widely in our research, teaching and training, including at the undergraduate level
-  - For example, what about "teaching replication" [@Frank2012-fc; @Chopik2018-wx].
+- How do we consolidating existing open science/open scholarship expertise in the department and build upon it?
+- How do we promoting these topics more widely in our research, teaching and training, including at the undergraduate level?
+  - For example, what about "teaching replication" [@Frank2012-fc; @Chopik2018-wx] as some have advocated?
 
 ## Forging partnerships
 
@@ -25,7 +26,7 @@ This page summarizes some of the projects the committee might choose to work on.
 ## Curriculum assessment
 
 - Work with faculty who teach *undergraduate* methods and statistics courses to support their work
-- Do you want or need to support new graduate coursework in the following topics:
+- Do we want or need to support new graduate coursework in the following topics:
   - Data management and sharing
   - Data visualization
   - Software development including version control
