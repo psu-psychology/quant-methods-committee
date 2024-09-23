@@ -7,7 +7,7 @@ The list is not exhaustive.
 
 - How do we consolidating existing open science/open scholarship expertise in the department and build upon it?
 - How do we promoting these topics more widely in our research, teaching and training, including at the undergraduate level?
-  - For example, what about "teaching replication" [@Frank2012-fc; @Chopik2018-wx] as some have advocated? @Boyce2023-cx study about the results of graduate student replications is an interesting.
+  - For example, what about "teaching replication" [@Frank2012-fc; @Chopik2018-wx]? See @Boyce2023-cx for some interesting results derived from a graduate methods course that specifically taught replication.
   
 ![@Boyce2023-cx Figure 2](https://royalsocietypublishing.org/cms/asset/77b87d5f-6762-4a37-bd8c-80c6a688a41b/rsos231240f02.jpg)
 
