@@ -1,5 +1,5 @@
 ---
-title: "Statistics courses taken by PSY grads"
+title: "Stats courses taken by PSY grads"
 subtitle: 2023-10-02
 ---
 

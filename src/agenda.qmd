@@ -27,7 +27,7 @@ The list is not exhaustive.
 
 ## Curriculum assessment
 
-- Work with faculty who teach *undergraduate* methods and statistics courses to support their work
+- Should we work with faculty who teach *undergraduate* methods and statistics courses to support their work?
 - Do we want or need to support new graduate coursework in the following topics:
   - Data management and sharing
   - Data visualization
