@@ -27,6 +27,8 @@ Other methods-related courses:
 
 The Psychology Department's website lists several [dual title programs](https://psych.la.psu.edu/graduate/program-areas/cross-cutting-program-initiatives/dual-degree-programs/).
 
+- Rick Gilmore's [presentation](https://psu-psychology.github.io/soda) on 2024-10-14 about the Social Data Analytics (SoDA) dual-title program.
+
 ## Open Science/Scholarship Initiative
 
 Rick Gilmore, Frank Hillary, and several colleagues in other departments are organizing multiple open science and open scholarship activities. Among the activities include:
