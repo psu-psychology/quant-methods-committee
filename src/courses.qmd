@@ -6,12 +6,12 @@ title: "Courses and Resources"
 
 Core (required) statistics sequence.
 
-- PSY 507, Data Analysis I (offered Fall 2024: Laurent)
-- PSY 508, Data Analysis II (offered Spring 2024: Laurent)
+- PSY 507, Data Analysis I (offered Fall 2025: Laurent), enrollment 24
+- PSY 508, Data Analysis II (offered Spring 2026: Laurent)
 
 Required methods course for the Specialization in Social, Cognitive, and Affective Neuroscience (SCAN).
 
-- PSY 511, SCAN Methods (offered Fall 2024: Hillary)
+- PSY 511, SCAN Methods (offered Fall 2025: Diaz), enrollment 13
 
 Other statistics courses offered regularly:
 
@@ -21,7 +21,7 @@ Other methods-related courses:
 
 - PSY 525 (Gilmore), [Transparent, Open, and Reproducible Research Practices in the Social and Behavioral Sciences](https://psu-psychology.github.io/psy-525-reproducible-research-2020/)
 
-- PSY 531, Multilevel research and analysis (offered Fall 2024: LeBreton)
+- PSY 531, Multilevel research and analysis (offered Fall 2025: LeBreton), enrollment 11.
 
 ## Dual-title programs
 
@@ -33,6 +33,7 @@ The Psychology Department's website lists several [dual title programs](https://
 
 Rick Gilmore, Frank Hillary, and several colleagues in other departments are organizing multiple open science and open scholarship activities. Among the activities include:
 
+- [Open Scholarship Bootcamp](https://penn-state-open-science.github.io/bootcamp-2025/) held in August 2025.
 - "Good enough data management practices" [workshop](https://penn-state-open-science.github.io/data-mgmt-2024/) in Spring 2024.
 - [Open Science Bootcamp](https://penn-state-open-science.github.io/bootcamp-2023/) in Summer 2023.
 - [Survey](https://penn-state-open-science.github.io/survey-fall-2022/) of knowledge and interest in open science in Fall 2022 and Spring 2023.
