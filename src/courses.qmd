@@ -2,26 +2,43 @@
 title: "Courses and Resources"
 ---
 
+## Undergraduate courses
+
+::: {.callout-warning}
+## Work in-progress
+
+This page is still underconstruction.
+Some information may be out-of-date or incorrect.
+
+:::
+
+- PSYCH 301W (Offered Fall 2026: Shrira), enrollment 109
+- PSYCH 301W (Offered Fall 2026: Shrira), enrollment 109
+- PSYCH 301W (Offered Spring 2026: Pearson), capacity 162
+
 ## Graduate courses
 
-Core (required) statistics sequence.
+### Penn State Bulletin
 
-- PSY 507, Data Analysis I (offered Fall 2025: Laurent), enrollment 24
-- PSY 508, Data Analysis II (offered Spring 2026: Laurent)
+<https://bulletins.psu.edu/university-course-descriptions/graduate/psy/>
+
+### Core (required) statistics sequence
+
+- PSY 507, Data Analysis I (offered Fall 2025: Laurent), enrollment 24. 
+- PSY 508, Data Analysis II (offered Spring 2026: Laurent), capacity 32
 
 Required methods course for the Specialization in Social, Cognitive, and Affective Neuroscience (SCAN).
 
 - PSY 511, SCAN Methods (offered Fall 2025: Diaz), enrollment 13
 
-Other statistics courses offered regularly:
+### Other methods-related courses
 
-- PSY 509 (LeBreton)
-
-Other methods-related courses:
-
-- PSY 525 (Gilmore), [Transparent, Open, and Reproducible Research Practices in the Social and Behavioral Sciences](https://psu-psychology.github.io/psy-525-reproducible-research-2020/)
-
+- PSY 509, Seminar in Quantitative Methods (LeBreton)
+- PSY 525 (Gilmore), [Transparent, Open, and Reproducible Research Practices in the Social and Behavioral Sciences](https://psu-psychology.github.io/psy-525-reproducible-research-2020/). Not currently scheduled.
+- PSY 526, Measurement in Human Development
+- PSY 528, Observational Methodologies for Development
 - PSY 531, Multilevel research and analysis (offered Fall 2025: LeBreton), enrollment 11.
+- PSY 543, Research Design in Clinical Psychology (offered Spring 2026: Soto), capacity 10.
 
 ## Dual-title programs
 
